@@ -72,4 +72,14 @@ plt.show()
 
 # Save results to PowerPoint
 # You can export the relevant data and visualizations to PowerPoint using libraries like python-pptx.
+import yfinance as yf
+
+# Define the ticker symbol for EUR/INR
+ticker_symbol = 'EURINR=X'
+
+# Scrape currency data from Yahoo Finance
+currency_data = yf.download(ticker_symbol, start='2023-01-01', end='2024-02-16')
+
+# Display the first few rows of the data
+print(currency_data.head())
 
