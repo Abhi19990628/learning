@@ -83,3 +83,9 @@ currency_data = yf.download(ticker_symbol, start='2023-01-01', end='2024-02-16')
 # Display the first few rows of the data
 print(currency_data.head())
 
+
+Results for February 16, 2024:
+Moving Average (20-day): BUY
+Moving Average (50-day): SELL
+Bollinger Bands: BUY
+CCI: NEUTRAL
